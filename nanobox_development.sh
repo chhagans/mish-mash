@@ -1,0 +1,1 @@
+nanobox run --debug -v ./development_runconfig.sh
