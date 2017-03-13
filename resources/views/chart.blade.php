@@ -1,19 +1,29 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+@extends('layouts.app')
 
-    .axis--x path {
-        display: none;
-    }
+@section('styles')
+    <style>
 
-    .line {
-        fill: none;
-        stroke: steelblue;
-        stroke-width: 1.5px;
-    }
+        .axis--x path {
+            display: none;
+        }
 
-</style>
-<svg width="960" height="500"></svg>
+        .line {
+            fill: none;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+        }
+
+    </style>
+@endsection
+
+@section('content')
+    <div class="container">
+        <svg width="960" height="500"></svg>
+        {{--<svg></svg>--}}
+    </div>
+@endsection
+
+@section("scripts")
 <script src="http://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -96,3 +106,4 @@
     }
 
 </script>
+@endsection
