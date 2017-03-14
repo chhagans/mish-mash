@@ -12,9 +12,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @yield('styles')
 
     <!-- Scripts -->
+    @yield('scripts')
+    <script src="{{ asset('js/app.js') }}"></script>
     <script>
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
@@ -82,8 +83,5 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    @yield('scripts')
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

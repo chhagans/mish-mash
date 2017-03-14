@@ -14,10 +14,10 @@ class OAuthTest extends TestCase
      *
      * @return void
      */
-    public function getClientsTest()
+    public function testGetClientsTest()
     {
         $response = $this->get('/oauth/clients');
 
-        $response->assertStatus(200);
+        $response->assertStatus(302);
     }
 }

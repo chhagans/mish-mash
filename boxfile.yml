@@ -20,6 +20,7 @@ run.config:
       - ctype
       - pdo_pgsql
       - pgsql
+      - curl
 
     #php debugger
     dev_zend_extensions:
@@ -39,6 +40,9 @@ data.postgres:
 # add a local storage database
 data.storage:
   image: nanobox/unfs
+
+data.chrome:
+  image: selenium/standalone-chrome
 
 # add a web server
 web.main:

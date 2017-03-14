@@ -1,16 +1,5 @@
 <?php
 //phpinfo();
-//
-//$host        = "host=172.18.0.6";
-//$port        = "port=5432";
-//$dbname      = "dbname=gonano";
-//
-//$db = pg_connect( "$host $port $dbname user=nanobox password=8PXMswrauv" );
-//if(!$db){
-//    echo "Error : Unable to open database\n";
-//} else {
-//    echo "Opened database successfully\n";
-//}
 
 /**
  * Laravel - A PHP Framework For Web Artisans

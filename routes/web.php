@@ -11,15 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/chart', 'ChartController@index');
 
-Route::get('/chart', function () {
-    return view('chart');
-});
+Route::get('chart/data', 'ChartController@show');
 
-Route::get('tsv/{id}', 'TsvController@show');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@index');

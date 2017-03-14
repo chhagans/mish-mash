@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    See the current prices of your funds <a href="/chart">here</a>.
                 </div>
             </div>
         </div>
